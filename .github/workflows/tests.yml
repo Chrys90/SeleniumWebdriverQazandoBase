@@ -33,5 +33,3 @@ jobs:
 
       - name: Run test
         run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci
-
-    # gerar o relatorio
