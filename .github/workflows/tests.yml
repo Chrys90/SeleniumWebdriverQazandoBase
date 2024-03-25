@@ -56,6 +56,7 @@ jobs:
           SLACK_TITLE: 'Sucesso na execução dos testes do PR  :white_check_mark'
           SLACK_USERNAME: SUCESSO
 
+
       - name: Enviar notificação Slack - Falha
         if: ${{ failure() }}
         uses: rtCamp/action-slack-notify@v2
@@ -65,4 +66,5 @@ jobs:
           SLACK_ICON: https://iconscout.com/icon/attention-53
           SLACK_MESSAGE: 'Falha na execução dos testes do PR  :white_check_mark'
           SLACK_TITLE: 'Falha na execução dos testes do PR  :white_check_mark'
-          SLACK_USERNAME: Falha
+          SLACK_USERNAME: FALHA
+         
