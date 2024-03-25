@@ -21,7 +21,7 @@ public class LoginSteps extends RunCucumber {
 
     @Quando("^preencho login \"([^\"]*)\" e senha \"([^\"]*)\"$")
     public void preencho_login_e_senha(String email, String senha) {
-    //    loginPage.preencheEmail(email);
+        loginPage.preencheEmail(email);
         loginPage.preencherSenha(senha);
     }
 
