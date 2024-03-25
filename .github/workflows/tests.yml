@@ -64,6 +64,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://iconscout.com/icon/attention-53
-          SLACK_MESSAGE: 'Falha na execução dos testes do PR :atenção:'
-          SLACK_TITLE: 'Falha na execução dos testes do PR :atenção:'
+          SLACK_MESSAGE: 'Falha na execução dos testes do PR  :white_check_mark'
+          SLACK_TITLE: 'Falha na execução dos testes do PR  :white_check_mark'
           SLACK_USERNAME: FALHA
+         
