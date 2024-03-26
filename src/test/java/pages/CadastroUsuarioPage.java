@@ -2,8 +2,12 @@ package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import runner.RunCucumber;
+import support.Commands;
 import support.Utils;
 
 import static support.Commands.*;
@@ -34,6 +38,7 @@ public class CadastroUsuarioPage extends RunCucumber {
     public void cadastrarUsuario() {
         clickElement(botaoFazerCadastro);
     }
+
 
     public void verificaCadastroSucesso() {
         checkMessage(By.id("swal2-title"),"Cadastro realizado!");

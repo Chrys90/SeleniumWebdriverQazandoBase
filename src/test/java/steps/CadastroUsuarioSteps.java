@@ -3,11 +3,13 @@ package steps;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.By;
 import pages.CadastroUsuarioPage;
 import pages.LoginPage;
 import runner.RunCucumber;
+import support.Commands;
 import support.ScreenShotUtils;
 
 import static support.Utils.getRandomEmail;
@@ -34,9 +36,10 @@ public class CadastroUsuarioSteps extends RunCucumber {
     public void clico_cadastrar() {
         cadastroPage.cadastrarUsuario();
     }
-    @Então("^vejo mensagem de usuário cadastrado com sucesso$")
+    @Entao("^vejo mensagem de usuário cadastrado com sucesso$")
     public void vejo_mensagem_cadastro_sucesso() {
         cadastroPage.verificaCadastroSucesso();
+
     }
 
 

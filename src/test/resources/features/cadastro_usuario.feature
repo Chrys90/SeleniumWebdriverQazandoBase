@@ -11,4 +11,4 @@
       Dado que estou na tela de cadastro de usuário
       E preencho todos os campos obrigatórios
       Quando clico em cadastrar
-      Então vejo mensagem de usuário cadastrado com sucesso
+      Entao vejo mensagem de usuário cadastrado com sucesso
