@@ -5,11 +5,9 @@ import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
-import org.openqa.selenium.By;
 import pages.CadastroUsuarioPage;
 import pages.LoginPage;
 import runner.RunCucumber;
-import support.Commands;
 import support.ScreenShotUtils;
 
 import static support.Utils.getRandomEmail;
