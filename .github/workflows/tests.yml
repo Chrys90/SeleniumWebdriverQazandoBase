@@ -32,7 +32,7 @@ jobs:
           
 
       - name: Run test
-        run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci Dcucumber.options="--tags  @login-sucesso"
+        run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci -Dcucumber.options="--tags @login-sucesso"
 
       - name: Gerar relatório
         if: always()
