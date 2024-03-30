@@ -34,7 +34,7 @@ jobs:
 
 
       - name: Run test
-        run: mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci" -Dcucumber.filter.tags="@cadastro_de_usuario or @login"
+        run: mvn test -Dtest=RunCucumber -Dbrowser=firefox-ci -Dcucumber.filter.tags="@cadastro_de_usuario or @login"
 
       - name: Gerar relatório
         if: always()
@@ -66,6 +66,6 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: 'Falha na execução dos testes agendados  :atenção: '
-          SLACK_TITLE: 'Falha na execução dos testes agendados  :atenção: '
+          SLACK_MESSAGE: 'Falha na execução dos testes agendados  :warning: '
+          SLACK_TITLE: 'Falha na execução dos testes agendados  :warning: '
           SLACK_USERNAME: FALHA
